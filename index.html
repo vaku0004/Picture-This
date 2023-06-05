@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +14,25 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
+      <picture>
+        <source srcset="images/museum-sq-960.jpg"
+                media="(min-width: 960px)" />
+        <source srcset="images/museum-sq-1280.jpg"
+                media="(min-width: 1280px)" />
+        <source srcset="images/museum-sq-1440.jpg"
+                media="(min-width: 1440px)" />
+        <source srcset="images/museum-sq-1600.jpg"
+                media="(min-width: 1600px)" />
+        <source srcset="images/museum-sq-1920.jpg"
+                media="(min-width: 1920px)" />             
+        <source srcset="images/museum960.jpg"
+                media="(min-width: 720px)" />
+        <source srcset="images/museum720.jpg"
+                media="(min-width: 480px)" />
+        <source srcset="images/museum480.jpg"
+                media="(min-width: 320px)" />
+        <img src="images/museum320.jpg" alt="Museum">
+      </picture>     
   </header>
 </body>
 
